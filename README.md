@@ -1,1 +1,0 @@
-Excersises for the ReactJS+Typescript Master class course

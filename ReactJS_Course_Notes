@@ -1,0 +1,36 @@
+Class component
+- Need to use react component instead
+- Called smart or stateful components
+- has state and lifecycle methods
+- Can use refs to reference elements
+
+Functional components
+- basic JS functions (regular or arrow functions)
+- refered as dumb or stateless components
+- cannot use lifecycle methods(like componentDidMount)
+- Doesnt have its own refs
+- No render method used in functional components
+- Mainly responsible for UI, tipically presentational only(Like an input component)
+- Can accept and use props
+- Mostly used if you dont need state management
+- can use react hooks
+
+Props
+- input/parameters that component can accept
+- makes your component reusable
+- should be treated as an inmutable object inside the component
+
+Style Attributes
+- accepts a camel cased JS object
+- react will automatically append a px suffix to crtain numeric inlines
+- most often used in react applications to add dinamically computed styles at render time
+
+Class creation
+- pass a string as the className prop
+- mos className depends on props/state to dinamically render the UI
+- generally better performance than inline styles
+
+Typescript props
+- To use typescript for props we can use "interface"
+- Interface defines the schema of what properties an object can toHaveTextContent
+- to define an optional property just add a suffix "?'
