@@ -33,4 +33,20 @@ Class creation
 Typescript props
 - To use typescript for props we can use "interface"
 - Interface defines the schema of what properties an object can toHaveTextContent
-- to define an optional property just add a suffix "?'
+- to define an optional property just add a suffix "?"
+
+State
+- Similar to props, but private and fully controlled by the component
+- Should be treated as inmutable
+- To update state, use this.setState() which will trigger a re-render
+- if you update the state directly, it will not do a re-renderkid
+- You can only update state directly in constructor
+
+setState() function
+- Asynchronous
+- Multiple calls may be batch for performance gain
+- First parameter can be a function or an object
+- When using object as first parameter, you only need to add the state you want to update
+- Using a function as a first parameter should be used if we want to update based on the previous state
+- Second parameter is actually a callback function
+
