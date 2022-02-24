@@ -50,3 +50,19 @@ setState() function
 - Using a function as a first parameter should be used if we want to update based on the previous state
 - Second parameter is actually a callback function
 
+Component Lifecycle
+----Mounting----
+
+When mounting the component the following functions are to be called
+- Constructor: is in charge of initializing the class/component only gets called once
+- static getDerivedStateFromProps: gets called before the render in some rare use cases
+- render: required as this should return the elements of your component
+- componentDidMount: called after the render method and react, it updates the DOm and only gets called once
+
+----Unmounting----
+
+- Invoked immediately before the component is unmounted and destroyed
+- Is used to perform neccessary cleanup in this method, such as invalidating timers, cancellingnetwork requests or subscriptions made by componentDidMount()
+
+----Update----
+
