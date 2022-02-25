@@ -64,5 +64,35 @@ When mounting the component the following functions are to be called
 - Invoked immediately before the component is unmounted and destroyed
 - Is used to perform neccessary cleanup in this method, such as invalidating timers, cancellingnetwork requests or subscriptions made by componentDidMount()
 
-----Update----
+----Updating----
+When updating a component the following methods will execute in order to get our component updated
+- static getDerivedStateFromProps(): works on the same way as on mounting, it allow us to set the state depending on the props. Its called before shouldComponentUpdate()
+= shouldComponentUpdate(nextProps, nextState): let react know if the component is affected by new state or props. 
+    - Gets invoked before the render() method
+    - Default is to always do a re-render(true)
+    - If we dont want to re-render we can return false
+    - it allow us to compare the new props and state with the current props and state
+- render(): it allow us to render the component
+- getSnapshotBeforeUpdate(prevProps, prevState)
+    - gets invoked right before the most recently rendered output is commited to the DOM
+    - enables your component to capture some informationfrom the DOM(like an scroll position) before it is potentially changed
+    - Value returned by the function will be passed to componentDidUpdate()
+- componentDidUpdate(prevProps, prevState, prevSnapshot): 
+    - invoked immediately after updating occurs
+    - May call setState() but we have to make sure it is wrapped in a condition
+    - Mostly used if you want to do something when a property in previous and current props are not equal(for example whe the userID has changed)
 
+----Error Handling----
+- Called when ther is an error during rendering, in a lifecycle method, or in the constructor of any child component. The parent componentwill catch the errors of its child component
+- static getDerivedStateFromError(error)
+    - Gets invoked after an error has been thrown by a descendant component
+    - Receives the error that was thrown as a parameter and should return a value to update state (similar to getDerivedStateFromProps)
+    - Is called during the render phase, so side-effects are not permited. For those use cases use componentDidCatch()
+    - Cannot access component (this objects) here
+- componentDidCatch(error, info)
+    - Invoked after an error has been thrown by a descendant component
+    - Parameters
+        - error: error that was thrown (same with getDerivedStateFromError)
+        - info: An object with a componentStack key containing information about which component threw the error
+    - Called during the commit phase, so side-effects are permitted. For those use cases use componentDid
+    - should be used for thing like logging errors

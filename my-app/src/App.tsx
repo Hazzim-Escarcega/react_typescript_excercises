@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-import CounterManagement from "./components/CounterManagement";
+import FirstComponent from "./components/FirstComponent";
 
 class App extends React.Component {
   render() {
     return (
       <>
         <h1>My React Application</h1>
-        <CounterManagement ownerName="Hazzim"></CounterManagement>
+        <FirstComponent/>
       </>
     );
   }
