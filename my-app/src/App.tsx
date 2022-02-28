@@ -1,15 +1,16 @@
-import React, {ErrorInfo} from "react";
+import React, { ErrorInfo } from "react";
 import "./App.css";
-import MyPureComponent from "./components/MyPureComponent";
+import NewsFeed  from "./components/NewsFeed";
+import Profile from "./components/Profile";
+import TrackClick from "./components/TrackClick";
 
 export const App: React.FC = () => {
-  
-    return (
-      <React.Fragment>
-        <h1>My React Application</h1>
-        <MyPureComponent/>
-      </React.Fragment>
-    );
-  
-}
+  return (
+    <React.Fragment>
+      <h1>My React Application</h1>
+      <Profile ownerName="Hazzim"/>
+      <NewsFeed/>
+    </React.Fragment>
+  );
+};
 export default App;
