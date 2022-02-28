@@ -1,6 +1,4 @@
-export interface FirstComponentProps{
-
-}
-export interface FirstComponentState{
-    hasError: boolean;
+export interface FirstComponentProps {}
+export interface FirstComponentState {
+  hasError: boolean;
 }

@@ -1,15 +1,15 @@
-import React from "react";
+import React, {ErrorInfo} from "react";
 import "./App.css";
-import FirstComponent from "./components/FirstComponent";
+import MyPureComponent from "./components/MyPureComponent";
 
-class App extends React.Component {
-  render() {
+export const App: React.FC = () => {
+  
     return (
-      <>
+      <React.Fragment>
         <h1>My React Application</h1>
-        <FirstComponent/>
-      </>
+        <MyPureComponent/>
+      </React.Fragment>
     );
-  }
+  
 }
 export default App;
