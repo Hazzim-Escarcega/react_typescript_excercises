@@ -1,4 +1,29 @@
-.primary{
-    background-color: blue;
+.btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
     color: white;
+}
+
+.btn-primary {
+    background-color: rgb(14, 190, 137);;
+}
+
+.btn-primary:hover {
+    background-color: rgb(97, 201, 97);
+}
+
+.btn-default {
+    background-color: rgb(0, 204, 255);
+}
+
+.btn-default:hover {
+    background-color: rgb(51, 177, 160);
+}
+
+.btn:active {
+    transform: scale(0.9);
 }

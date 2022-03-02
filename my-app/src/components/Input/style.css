@@ -1,0 +1,24 @@
+.input-container .input {
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.input-container .input.error {
+    border-color: rgb(14, 190, 137);
+}
+
+.input-container .input-label {
+    font-size: 20px;
+}
+
+.input-container .error-message {
+    font-style: italic;
+    color: rgb(14, 190, 137);;
+    font-size: 14px;
+    margin-top: 5px;
+}
