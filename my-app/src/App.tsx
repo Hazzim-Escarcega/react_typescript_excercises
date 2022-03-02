@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
-import HomePage from "./components/HomePage";
-import { MycontextProvider } from "./context/MyContext";
+import {FormElements} from "./components/FormElements"
 
 function App() {
   return (
-      <MycontextProvider>
-      <HomePage />
-      </MycontextProvider>
+      <div className="App">
+        <FormElements/>
+      </div>
   );
 }
 
