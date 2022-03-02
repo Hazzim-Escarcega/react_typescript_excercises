@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import StudentGrade from './components/StudentGrade';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <StudentGrade />
+      <HomePage />
     </div>
   );
 }
