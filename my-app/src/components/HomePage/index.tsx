@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import { Button } from "../Button";
 import { ButtonGroup } from "../ButtonGroup";
 
@@ -21,4 +21,5 @@ class HomePage extends React.Component{
     )
   }
 }
-export default HomePage;
+export default HomePage; */
+export{}
