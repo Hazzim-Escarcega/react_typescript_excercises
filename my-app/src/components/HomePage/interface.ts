@@ -1,4 +1,5 @@
-export interface HomePageState {
-    counter: number;
-    hasError: boolean;
+export interface ButtonProps {
+  type?: "primary" | "default";
+  className?: string;
+  onClick(): void;
 }

@@ -1,5 +1,6 @@
 export interface ButtonProps {
-    onClick():void;
-    type?: 'primary' | 'default';
+    type?: "primary" | "default";
     className?: string;
-}
+    onClick(): void;
+  }
+  

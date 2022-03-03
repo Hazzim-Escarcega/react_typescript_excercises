@@ -3,9 +3,9 @@ import { ButtonProps } from './interface';
 import './style.css';
 
 export const Button: React.FC<ButtonProps> = ({ children, onClick, type, className }) => {
-    const buttonType = type || 'default';
+    const currentType = type || 'default';
 
     return (
-        <button className={`btn btn-${buttonType} ${className || ''}`} onClick={onClick}>{children}</button>
+        <button className={`btn btn-${currentType} ${className || ''}`} onClick={onClick}>{children}</button>
     );
 }
