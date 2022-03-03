@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ReusableButton from './components/ReusableButton'
+import HomePage from './components/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <ReusableButton/>
+    <div>
+      <HomePage />
     </div>
   );
 }

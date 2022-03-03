@@ -1,25 +1,13 @@
-/* import React from "react";
-import { Button } from "../Button";
-import { ButtonGroup } from "../ButtonGroup";
+import React from 'react';
 
-
-
-class HomePage extends React.Component{
-  nullClass(){
-    return null
-  }
-  render() {
-    return (
-      <div>
-        <h1>Home Page</h1>
-        <ButtonGroup>
-        <Button onClick={this.nullClass} type="primary">Primary</Button>
-        <Button onClick={this.nullClass}>Default</Button>
-        Test
-        </ButtonGroup>
-      </div>
-    )
-  }
+class HomePage extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1> Home Page </h1>
+            </div>
+        )
+    }
 }
-export default HomePage; */
-export{}
+
+export default HomePage;
