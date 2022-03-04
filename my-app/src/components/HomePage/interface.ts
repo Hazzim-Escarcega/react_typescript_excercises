@@ -1,5 +1,3 @@
-export interface ButtonProps {
-  type?: "primary" | "default";
-  className?: string;
-  onClick(): void;
+export interface HomePageState {
+  showModal: boolean;
 }

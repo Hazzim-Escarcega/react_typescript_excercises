@@ -9,17 +9,21 @@
 }
 
 .btn-primary {
-  background-color: cyan;
+  background-color: green;
 }
+
 .btn-primary:hover {
-  background-color: lightblue;
+  background-color: darkgreen;
 }
+
 .btn-default {
-  border-color: purple;
+  background-color: blue;
 }
-.btn-primary:hover {
-  background-color: violet;
+
+.btn-default:hover {
+  background-color: darkblue;
 }
-.btn.active {
+
+.btn:active {
   transform: scale(0.9);
 }
