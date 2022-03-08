@@ -1,3 +1,3 @@
 export interface HomePageState {
-  showModal: boolean;
+    showModal: boolean;
 }
