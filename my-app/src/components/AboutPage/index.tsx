@@ -1,14 +1,15 @@
-import React from "react";
-import { AboutPageProps } from "./interface";
+import React from 'react';
+import UserDetails from '../UserDetails';
 
-class AboutPage extends React.Component<AboutPageProps> {
-  render() {
-    return (
-      <div>
-        <h1> About Page </h1>
-      </div>
-    );
-  }
+class AboutPage extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1> About Page </h1>
+                <UserDetails />
+            </div>
+        )
+    }
 }
 
 export default AboutPage;
