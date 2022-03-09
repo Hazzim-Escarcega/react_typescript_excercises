@@ -1,14 +1,14 @@
 import React from 'react';
-import UserDetails from '../UserDetails';
+import Fruits from '../Fruits';
 
 class AboutPage extends React.Component {
     render() {
         return (
             <div>
-                <h1> About Page </h1>
-                <UserDetails />
+                <h1>About Page</h1>
+                <Fruits ownerName="Rysh" />
             </div>
-        )
+        );
     }
 }
 

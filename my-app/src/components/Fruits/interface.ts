@@ -1,5 +1,9 @@
-export interface FruitsProps {}
-export interface FruitsState {
-  fruits: string[];
-  newFruit: string;
+export interface FruitsOwnProps {
+    ownerName: string;
 }
+
+export interface FruitsStateProps {
+    fruits: string[];
+}
+
+export type FruitsProps = FruitsOwnProps & FruitsStateProps;
